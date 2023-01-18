@@ -15,7 +15,9 @@ public class Song {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long Id;
 
+    @Column(name="Title")
 	private String title;
+    @Column(name="Artist")
     private String artist;
     @Column(name="Genre")
     private String genre;
